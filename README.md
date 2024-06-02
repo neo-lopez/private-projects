@@ -9,7 +9,7 @@ The full repository can be found [here](https://github.com/neo-lopez/malloc-lab)
 ### Overview
 In this project, I reimplemented the C memory allocation functions `malloc`, `calloc`, `realloc`, `free` by using rudimentary functions to manipulate and store data on the heap.
 
-My project ranked first in over 326 unique student submissions in the combination of throughput and utilization.
+My project ranked [first](https://autolab.andrew.cmu.edu/courses/15213-f23/assessments/malloclab/scoreboard) in over 326 unique student submissions in the combination of throughput and utilization.
 ### Implementation
 - Memory allocation takes place on the heap due to its expandable nature. Blocks on the heap are either allocated or freed, starting with one big free block. Each block contains a footer and/or a header to hold necessary information for maintenance of the blocks amongst one another on the heap.
 - Utilization, how much of the heap we use for dynamic memory as opposed to overhead in maintaining the blocks, is optimized by the following design choices:
