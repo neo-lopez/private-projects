@@ -1,11 +1,14 @@
 # Private Projects
 This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at splopez@andrew.cmu.edu and I would be happy to grant access.
+- [Dynamic Memory Allocator, malloc lab](https://github.com/neo-lopez/malloc-lab)
 
 ## Dynamic Memory Allocator
 ### Repository Access
-The full repository can be found here. To request access, please email splopez@andrew.cmu.edu
+The full repository can be found [here](https://github.com/neo-lopez/malloc-lab). To request access, please email splopez@andrew.cmu.edu
 ### Overview
 In this project, I reimplemented the C memory allocation functions `malloc`, `calloc`, `realloc`, `free` by using rudimentary functions to manipulate and store data on the heap.
+
+My project ranked first in over 326 unique student submissions in the combination of throughput and utilization.
 ### Implementation
 - Memory allocation takes place on the heap due to its expandable nature. Blocks on the heap are either allocated or freed, starting with one big free block. Each block contains a footer and/or a header to hold necessary information for maintenance of the blocks amongst one another on the heap.
 - Utilization, how much of the heap we use for dynamic memory as opposed to overhead in maintaining the blocks, is optimized by the following design choices:
