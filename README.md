@@ -1,11 +1,11 @@
 # Private Projects
-This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at splopez@andrew.cmu.edu and I would be happy to grant access.
+This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at neo04lopez@gmail.com and I would be happy to grant access.
 - [Dynamic Memory Allocator, malloc lab](https://github.com/neo-lopez/malloc-lab)
 - [Web Proxy, proxy lab](https://github.com/neo-lopez/proxy-lab)
 
 ## Dynamic Memory Allocator
 ### Repository Access
-The full repository can be found [here](https://github.com/neo-lopez/malloc-lab). To request access, please email splopez@andrew.cmu.edu
+The full repository can be found [here](https://github.com/neo-lopez/malloc-lab). To request access, please email neo04lopez@gmail.com.
 ### Overview
 In this project, I reimplemented the C memory allocation functions `malloc`, `calloc`, `realloc`, `free` by using rudimentary functions to manipulate and store data on the heap.
 
@@ -25,7 +25,7 @@ My project ranked [first](https://autolab.andrew.cmu.edu/courses/15213-f23/asses
 
 ## Web Proxy
 ### Repository Access
-The full repository can be found [here](https://github.com/neo-lopez/proxy-lab). To request access, please email splopez@andrew.cmu.edu
+The full repository can be found [here](https://github.com/neo-lopez/proxy-lab). To request access, please email neo04lopez@gmail.com.
 ### Overview
 In this project, I created a working web proxy, which serves as a middle man between clients and servers. To the client, it acts as a server, interpreting requests and providing responses. While to the server, it acts as a client, generating requests and reading responses. Proxies are useful for security, anonimity, and speed.
 ### High-level Process
