@@ -1,7 +1,7 @@
 # Private Projects
 This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at splopez@andrew.cmu.edu and I would be happy to grant access.
 - [Dynamic Memory Allocator, malloc lab](https://github.com/neo-lopez/malloc-lab)
-- [Web Proxy](https://github.com/neo-lopez/proxy-lab)
+- [Web Proxy, proxy lab](https://github.com/neo-lopez/proxy-lab)
 
 ## Dynamic Memory Allocator
 ### Repository Access
