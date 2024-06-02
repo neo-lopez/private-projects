@@ -1,6 +1,7 @@
 # Private Projects
 This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at splopez@andrew.cmu.edu and I would be happy to grant access.
 - [Dynamic Memory Allocator, malloc lab](https://github.com/neo-lopez/malloc-lab)
+- Web Proxy
 
 ## Dynamic Memory Allocator
 ### Repository Access
@@ -21,3 +22,22 @@ My project ranked first in over 326 unique student submissions in the combinatio
   - Segregated free lists: Segregated free lists are attainable by associating a size with each block. The segregated lists ensure we do not search through every free block in search for a fit for a to-be-allocated block. The size boundaries on each segregated free list were carefully adjusted to maximize performance.
   - Better-fit algorithm: The algorithm avoids creating split blocks that are of size <= 16 bytes, since this will eventually join the mini block list, which is scanned through slowly.
   - Micro-optimizations: The code is written in a way that prevents using more time than necessary to check conditions. In addition, it features unique time-saving algorithms such as quicker rounding for power-of-2 numbers.
+
+## Web Proxy
+### Repository Access
+The full repository can be found here. To request access, please email splopez@andrew.cmu.edu
+### Overview
+In this project, I created a working web proxy, which serves as a middle man between clients and servers. To the client, it acts as a server, interpreting requests and providing responses. While to the server, it acts as a client, generating requests and reading responses. Proxies are useful for security, anonimity, and speed.
+### High-level Process
+1. Open a socket which listens for new clients.
+2. Use a new thread for each new client.
+3. Read requests from client.
+4. Search the cache for the requested object. If present, write this response to the client and skip steps 5-7.
+5. Write the client's request to the server.
+6. Read the server's response and cache it.
+7. Write the response back to the client.
+### Implementation Details
+- Get HTTP requests are handled by safe I/O functions that allow for reading and writing both binary and text data.
+- HTTP requests are used as keys to software cache the most recent requests, enabling faster speeds for objects that are requested from the server multiple times.
+- Multiple requests are handled concurrently with threads, and thread-safe access and updating of the cache is enabled by mutexes.
+- The web proxy employs proper error checking and will not exit the program when errors arise.
