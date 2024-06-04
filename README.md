@@ -1,7 +1,7 @@
 # Private Projects
 This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at neo04lopez@gmail.com and I would be happy to grant access.
-- Dynamic Memory Allocator: [desc](https://github.com/neo-lopez/private-projects/edit/main/README.md#dynamic-memory-allocator), [repo](https://github.com/neo-lopez/malloc-lab)
-- Web Proxy: [desc](https://github.com/neo-lopez/private-projects/edit/main/README.md#web-proxy), [repo](https://github.com/neo-lopez/proxy-lab)
+- Dynamic Memory Allocator: [read more](https://github.com/neo-lopez/private-projects?tab=readme-ov-file#dynamic-memory-allocator), [repo](https://github.com/neo-lopez/malloc-lab)
+- Web Proxy: [read more](https://github.com/neo-lopez/private-projects?tab=readme-ov-file#web-proxy), [repo](https://github.com/neo-lopez/proxy-lab)
 - Shell: desc, repo
 
 ## Dynamic Memory Allocator
