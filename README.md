@@ -2,7 +2,7 @@
 This file contains descriptions and links to my most notable private projects. Please note that each project link will lead to a 404 error unless I have granted you access. Please reach out to me at neo04lopez@gmail.com and I would be happy to grant access.
 - Dynamic Memory Allocator: [read more](https://github.com/neo-lopez/private-projects?tab=readme-ov-file#dynamic-memory-allocator), [repo](https://github.com/neo-lopez/malloc-lab)
 - Web Proxy: [read more](https://github.com/neo-lopez/private-projects?tab=readme-ov-file#web-proxy), [repo](https://github.com/neo-lopez/proxy-lab)
-- Shell: desc, repo
+- Shell: [read more](https://github.com/neo-lopez/private-projects?tab=readme-ov-file#shell), [repo](https://github.com/neo-lopez/shell)
 
 ## Dynamic Memory Allocator
 ### Repository Access
@@ -26,7 +26,7 @@ My project ranked [first](https://autolab.andrew.cmu.edu/courses/15213-f23/asses
 
 ## Web Proxy
 ### Repository Access
-The full repository can be found [here](https://github.com/neo-lopez/proxy-lab). To request access, please email neo04lopez@gmail.com.
+The full repository can be found [here](https://github.com/neo-lopez/shell). To request access, please email neo04lopez@gmail.com.
 ### Overview
 In this project, I created a working web proxy, which serves as a middle man between clients and servers. To the client, it acts as a server, interpreting requests and providing responses. While to the server, it acts as a client, generating requests and reading responses. Proxies are useful for security, anonimity, and speed.
 ### High-level Process
