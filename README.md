@@ -42,3 +42,32 @@ In this project, I created a working web proxy, which serves as a middle man bet
 - HTTP requests are used as keys to software cache the most recent requests, enabling faster speeds for objects that are requested from the server multiple times.
 - Multiple requests are handled concurrently with threads, and thread-safe access and updating of the cache is enabled by mutexes.
 - The web proxy employs proper error checking and will not exit the program when errors arise.
+
+## Shell
+### Respository Access
+The full repository can be found [here](https://github.com/neo-lopez/proxy-lab). To request access, please email neo04lopez@gmail.com.
+### Overview
+In this project, I implemented a Unix command-line shell that interprets user inputs, capable of executing concurrent built-in and user-driven commands. This shell supports error handling, signal handling, and IO redirection. The shell was written with rudimentary C standard library functions.
+### Features
+- Creating and Controlling Processes:
+  - A user may simply enter an executable that they wish to run, and if the file is reachable, the process will immediately begin taking place.
+  - If the & operator is added to the end of the line, the process will run in the background by forking a new process, and the user may continue using the shell foreground as normal.
+  - If the & operator is not added, the process will run in the foreground. This can be terminated or paused using ctrl-c or ctrl-z respectively.
+  - Children are properly reaped using a signal handler. The signal handler is able to deal with multiple terminated children despite receiving just one signal.
+  - Background jobs are reaped since signals are sent concurrently with process execution.
+- Unique Process and Job IDs:
+  - Each job being executed has a process ID (PID) and a job ID (JID), which is unique to that process. This is used for identification and further manipulation of processes.
+  - Each child process is given its own process group, so when signals are forwarded to that process group, it will not interfere with the parent process. Specifically, this is necessary because otherwise these signals would be sent back to the original shell (parent), as well as every process created by it.
+  - When a background process begins, its JID and PID as well as the command line which invoked the execution are displayed.
+- Built-in Commands
+  - `quit`: terminates the shell.
+  - `jobs`: lists all background jobs.
+  - `bg job`: resumes job by sending it a SIGCONT signal, and then runs it in the background. The job argument can be either a PID or JID.
+  - `fg job`: command resumes job by sending it a SIGCONT signal, and then runs it in the foreground. The job argument can be either a PID or JID.
+- I/O Redirection
+  - The operators < (input) and > (output) proceed the name of the file to which the input or output will be redirected.
+  - The default input and output are stdout and stdin respectively.
+  - Users may redirect output to any valid file which they have permission to write to.
+  - If a request is made to write to a file that doesn't exist, a new file will be created and written to.
+  - Output can also be redirected from built-in commands, such as the jobs command, which lists the background jobs as described in the previous section.
+  - Users may redirect input from any valid file which they have permission to read from. The file itself must exist or the process will be terminated.
